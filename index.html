@@ -6,41 +6,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            font-family: -apple-system;
-            background: #f5f5f7;
             margin: 0;
-            padding: 40px;
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial;
+            background: #f5f5f7;
+            color: #1d1d1f;
         }
+
+        .header {
+            text-align: center;
+            padding: 60px 20px 30px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        .header p {
+            margin-top: 10px;
+            color: #666;
+        }
+
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: auto;
-        }
-        .card {
-            background: white;
             padding: 20px;
-            border-radius: 12px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
         }
-        a {
+
+        .app-card {
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+            transition: transform 0.2s ease;
+        }
+
+        .app-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .app-title {
+            font-size: 22px;
+            margin: 0;
+        }
+
+        .app-desc {
+            margin: 10px 0 15px;
+            color: #555;
+        }
+
+        .links a {
+            margin-right: 15px;
             text-decoration: none;
             color: #007aff;
+            font-weight: 500;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 13px;
+            color: #888;
+            margin: 40px 0 20px;
+        }
+
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 24px;
+            }
         }
     </style>
 </head>
 <body>
-<div class="container">
-    <h1>📱 我的应用</h1>
 
-    <div class="card">
-        <h2>木鱼 · 静心</h2>
-        <p>一个用于放松与冥想的木鱼应用。</p>
-        <p>
-            <a href="./apps/muyu/support.html">技术支持</a> |
-            <a href="./apps/muyu/privacy.html">隐私政策</a>
+<div class="header">
+    <h1>📱 我的应用</h1>
+    <p>简单 · 专注 · 高效</p>
+</div>
+
+<div class="container">
+
+    <div class="app-card">
+        <h2 class="app-title">木鱼 · 静心</h2>
+        <p class="app-desc">
+            一款帮助您放松身心、专注冥想的轻量应用。
         </p>
+        <div class="links">
+            <a href="./apps/muyu/support.html">技术支持</a>
+            <a href="./apps/muyu/privacy.html">隐私政策</a>
+        </div>
     </div>
 
+    <!-- 以后新增 App 在这里复制 -->
+
 </div>
+
+<div class="footer">
+    © 2026 Liu Wenbao
+</div>
+
 </body>
 </html>
