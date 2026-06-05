@@ -1,108 +1,151 @@
 <!DOCTYPE html>
+
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>Liu Wenbao - Apps</title>
+    <title>Liu Wenbao Apps</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial;
-            background: #f5f5f7;
-            color: #1d1d1f;
-        }
 
-        .header {
-            text-align: center;
-            padding: 60px 20px 30px;
-        }
+<style>
+    body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+            "Helvetica Neue", Arial, sans-serif;
+        background: #f5f5f7;
+        color: #1d1d1f;
+    }
 
+    .header {
+        text-align: center;
+        padding: 70px 20px 40px;
+    }
+
+    .header h1 {
+        margin: 0;
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    .header p {
+        margin-top: 12px;
+        color: #6e6e73;
+        font-size: 17px;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .app-card {
+        background: #ffffff;
+        border-radius: 18px;
+        padding: 24px;
+        margin-bottom: 24px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+        transition: all 0.2s ease;
+    }
+
+    .app-card:hover {
+        transform: translateY(-4px);
+    }
+
+    .app-title {
+        margin: 0;
+        font-size: 24px;
+    }
+
+    .app-subtitle {
+        color: #6e6e73;
+        margin-top: 4px;
+        font-size: 14px;
+    }
+
+    .app-desc {
+        margin: 14px 0 18px;
+        color: #444;
+        line-height: 1.7;
+    }
+
+    .links a {
+        display: inline-block;
+        margin-right: 16px;
+        text-decoration: none;
+        color: #007aff;
+        font-weight: 500;
+    }
+
+    .links a:hover {
+        text-decoration: underline;
+    }
+
+    .footer {
+        text-align: center;
+        color: #8e8e93;
+        font-size: 13px;
+        margin: 50px 0 30px;
+    }
+
+    @media (max-width: 600px) {
         .header h1 {
-            margin: 0;
-            font-size: 32px;
-        }
-
-        .header p {
-            margin-top: 10px;
-            color: #666;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
-        }
-
-        .app-card {
-            background: white;
-            border-radius: 16px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-            transition: transform 0.2s ease;
-        }
-
-        .app-card:hover {
-            transform: translateY(-4px);
+            font-size: 28px;
         }
 
         .app-title {
-            font-size: 22px;
-            margin: 0;
+            font-size: 20px;
         }
+    }
+</style>
 
-        .app-desc {
-            margin: 10px 0 15px;
-            color: #555;
-        }
 
-        .links a {
-            margin-right: 15px;
-            text-decoration: none;
-            color: #007aff;
-            font-weight: 500;
-        }
-
-        .footer {
-            text-align: center;
-            font-size: 13px;
-            color: #888;
-            margin: 40px 0 20px;
-        }
-
-        @media (max-width: 600px) {
-            .header h1 {
-                font-size: 24px;
-            }
-        }
-    </style>
 </head>
 <body>
 
 <div class="header">
-    <h1>📱 我的应用</h1>
-    <p>简单 · 专注 · 高效</p>
+    <h1>📱 Liu Wenbao Apps</h1>
+    <p>Simple · Focused · Thoughtfully Crafted</p>
 </div>
 
 <div class="container">
 
-    <div class="app-card">
-        <h2 class="app-title">木鱼 · 静心</h2>
-        <p class="app-desc">
-            一款帮助您放松身心、专注冥想的轻量应用。
-        </p>
-        <div class="links">
-            <a href="./apps/muyu/support.html">技术支持</a>
-            <a href="./apps/muyu/privacy.html">隐私政策</a>
-        </div>
-    </div>
 
-    <!-- 以后新增 App 在这里复制 -->
+<div class="app-card">
+    <h2 class="app-title">木鱼 · 静心</h2>
+    <div class="app-subtitle">Muyu Meditation</div>
+
+    <p class="app-desc">
+        一款帮助您放松身心、专注冥想的轻量应用，
+        通过木鱼敲击与禅意体验帮助您缓解压力与焦虑。
+    </p>
+
+    <div class="links">
+        <a href="./apps/muyu/support.html">技术支持</a>
+        <a href="./apps/muyu/privacy.html">隐私政策</a>
+    </div>
+</div>
+
+<div class="app-card">
+    <h2 class="app-title">寻谧音集</h2>
+    <div class="app-subtitle">Seekmist</div>
+
+    <p class="app-desc">
+        自然环境音与白噪音应用，
+        提供雨声、海浪、森林、篝火等沉浸式声音场景，
+        帮助您放松、专注、冥想以及改善睡眠体验。
+    </p>
+
+    <div class="links">
+        <a href="./apps/meditation/support.html">技术支持</a>
+        <a href="./apps/meditation/privacy.html">隐私政策</a>
+    </div>
+</div>
+
 
 </div>
 
 <div class="footer">
-    © 2026 Liu Wenbao
+    © 2026 Liu Wenbao. All Rights Reserved.
 </div>
 
 </body>
