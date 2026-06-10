@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>Liu Wenbao Apps</title>
+    <title>Hope & Wish Apps</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
@@ -96,56 +95,101 @@
             font-size: 20px;
         }
     }
-</style>
 
+    /* 深色模式支持 */
+    @media (prefers-color-scheme: dark) {
+        body {
+            background: #000;
+            color: #fff;
+        }
+
+        .app-card {
+            background: #1c1c1e;
+            box-shadow: none;
+        }
+
+        .app-desc {
+            color: #d1d1d6;
+        }
+
+        .app-subtitle,
+        .footer,
+        .header p {
+            color: #98989d;
+        }
+
+        .links a {
+            color: #0a84ff;
+        }
+    }
+</style>
 
 </head>
 <body>
 
 <div class="header">
-    <h1>📱 Liu Wenbao Apps</h1>
-    <p>Simple · Focused · Thoughtfully Crafted</p>
+    <h1>📱 Hope & Wish Apps</h1>
+    <p>简单 · 专注 · 用心打造</p>
 </div>
 
 <div class="container">
 
+    <!-- 木鱼 -->
+    <div class="app-card">
+        <h2 class="app-title">木鱼 · 静心</h2>
+        <div class="app-subtitle">Muyu Meditation</div>
 
-<div class="app-card">
-    <h2 class="app-title">木鱼 · 静心</h2>
-    <div class="app-subtitle">Muyu Meditation</div>
+        <p class="app-desc">
+            一款帮助您放松身心、专注冥想的轻量应用，
+            通过木鱼敲击与禅意体验帮助您缓解压力与焦虑。
+        </p>
 
-    <p class="app-desc">
-        一款帮助您放松身心、专注冥想的轻量应用，
-        通过木鱼敲击与禅意体验帮助您缓解压力与焦虑。
-    </p>
-
-    <div class="links">
-        <a href="./apps/muyu/support.html">技术支持</a>
-        <a href="./apps/muyu/privacy.html">隐私政策</a>
+        <div class="links">
+            <a href="./apps/muyu/support.html">技术支持</a>
+            <a href="./apps/muyu/privacy.html">隐私政策</a>
+        </div>
     </div>
-</div>
 
-<div class="app-card">
-    <h2 class="app-title">寻谧音集</h2>
-    <div class="app-subtitle">Seekmist</div>
+    <!-- 寻谧音集 -->
+    <div class="app-card">
+        <h2 class="app-title">寻谧音集</h2>
+        <div class="app-subtitle">Seekmist</div>
 
-    <p class="app-desc">
-        自然环境音与白噪音应用，
-        提供雨声、海浪、森林、篝火等沉浸式声音场景，
-        帮助您放松、专注、冥想以及改善睡眠体验。
-    </p>
+        <p class="app-desc">
+            自然环境音与白噪音应用，
+            提供雨声、海浪、森林、篝火等沉浸式声音场景，
+            帮助您放松、专注、冥想以及改善睡眠体验。
+        </p>
 
-    <div class="links">
-        <a href="./apps/meditation/support.html">技术支持</a>
-        <a href="./apps/meditation/privacy.html">隐私政策</a>
+        <div class="links">
+            <a href="./apps/meditation/support.html">技术支持</a>
+            <a href="./apps/meditation/privacy.html">隐私政策</a>
+        </div>
     </div>
-</div>
 
+    <!-- 叮咛 -->
+    <div class="app-card">
+        <h2 class="app-title">叮咛</h2>
+        <div class="app-subtitle">DingNing Reminder</div>
+
+        <p class="app-desc">
+            一句话快速创建提醒事项，
+            支持自然语言与语音输入，
+            自动识别时间并创建提醒。
+            通过日历查看提醒记录、完成统计与历史回顾，
+            帮助您轻松管理工作与生活中的每一个重要时刻。
+        </p>
+
+        <div class="links">
+            <a href="./apps/reminder/support.html">技术支持</a>
+            <a href="./apps/reminder/privacy.html">隐私政策</a>
+        </div>
+    </div>
 
 </div>
 
 <div class="footer">
-    © 2026 Liu Wenbao. All Rights Reserved.
+    © 2026 Hope & Wish. All Rights Reserved.
 </div>
 
 </body>
